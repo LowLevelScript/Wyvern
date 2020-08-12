@@ -5,6 +5,6 @@
 #include <simdjson.h>
 
 // llvm
-#include <llvm/Pass.h>
+#include <llvm/ADT/STLExtras.h>
 
 #endif //!WYVERN_H
