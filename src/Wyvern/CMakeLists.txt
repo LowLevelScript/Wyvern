@@ -1,4 +1,4 @@
-find_package(llvm 10.0.0 REQUIRED)
+#find_package(llvm REQUIRED)
 
 set(WYVERN_SOURCES
         Wyvern.cpp
@@ -13,6 +13,6 @@ target_include_directories(Wyvern PUBLIC
         )
 
 target_link_libraries(Wyvern PUBLIC
-        llvm
+#        llvm
         simdjson
         )
