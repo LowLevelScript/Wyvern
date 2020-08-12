@@ -8,9 +8,4 @@ project(Wyvern
 
 set(CMAKE_OBJECT_PATH_MAX 512)
 
-set(LLVM_INCLUDE_EXAMPLES OFF)
-set(LLVM_INCLUDE_TESTS OFF)
-set(LLVM_INCLUDE_BENCHMARKS OFF)
-
-add_subdirectory(dependencies/llvmp/llvm)
 add_subdirectory(dependencies/simdjson)
