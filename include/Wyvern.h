@@ -4,4 +4,7 @@
 // simdjson
 #include <simdjson.h>
 
+// llvm
+#include <llvm/Pass.h>
+
 #endif //!WYVERN_H

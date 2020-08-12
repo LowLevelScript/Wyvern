@@ -1,4 +1,7 @@
-#find_package(llvm REQUIRED)
+# Copyright 2020 Matt Jones and Contributors.
+# Recipe based on https://github.com/novelrt/NovelRT
+
+find_package(llvm 10.0.0 REQUIRED)
 
 set(WYVERN_SOURCES
         Wyvern.cpp
@@ -12,7 +15,12 @@ target_include_directories(Wyvern PUBLIC
         $<INSTALL_INTERFACE:include>
         )
 
+include_directories(${LLVM_INCLUDE_DIRS})
+add_definitions(${LLVM_DEFINITIONS})
+
+llvm_map_components_to_libnames(llvm_libs support core irreader)
+
 target_link_libraries(Wyvern PUBLIC
-#        llvm
         simdjson
+        ${llvm_libs}
         )
