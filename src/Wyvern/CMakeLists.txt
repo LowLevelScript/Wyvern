@@ -12,10 +12,10 @@ target_compile_features(Wyvern PUBLIC cxx_std_17)
 target_include_directories(Wyvern PUBLIC
         $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
         $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/dependencies/simdjson/include>
+        ${LLVM_INCLUDE_DIRS}
         $<INSTALL_INTERFACE:include>
         )
 
-include_directories(${LLVM_INCLUDE_DIRS})
 add_definitions(${LLVM_DEFINITIONS})
 
 llvm_map_components_to_libnames(llvm_libs support core irreader)
