@@ -4,6 +4,7 @@
 find_package(llvm 10.0.0 REQUIRED)
 
 set(WYVERN_SOURCES
+        FS/SourceFile.cpp
         Lexer/Lexer.cpp
         )
 
