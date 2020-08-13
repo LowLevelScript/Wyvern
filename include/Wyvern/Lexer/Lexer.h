@@ -9,14 +9,14 @@ namespace Wyvern::Lexer {
 
     class Lexer {
     private:
-        static std::string IdentifierStr;
-        static double NumVal;
+        std::string IdentifierStr;
+        double NumVal;
         std::shared_ptr<Wyvern::FS::SourceFile> Source = nullptr;
 
     public:
         explicit Lexer(const std::string& Path);
 
-        int getTok() const;
+        int getTok();
     };
 
 } // namespace Wyvern::Lexer

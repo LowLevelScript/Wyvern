@@ -4,7 +4,7 @@ namespace Wyvern::Lexer {
     Lexer::Lexer(const std::string &Path) :
     Source(std::make_shared<Wyvern::FS::SourceFile>(Path)) { }
 
-    int Lexer::getTok() const {
+    int Lexer::getTok() {
         static int LastChar = ' ';
 
         // Skip any whitespace.
