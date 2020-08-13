@@ -7,4 +7,7 @@
 // llvm
 #include <llvm/ADT/STLExtras.h>
 
+// W: enums
+#include "Wyvern/Lexer/Token.h"
+
 #endif //!WYVERN_H
