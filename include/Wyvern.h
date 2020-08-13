@@ -19,7 +19,7 @@
 #include "Wyvern/Utilities/Event.h"
 
 //
-#include "Wyvern/Lexer/Lexer.h"
 #include "Wyvern/FS/SourceFile.h"
+#include "Wyvern/Lexer/Lexer.h"
 
 #endif //!WYVERN_H

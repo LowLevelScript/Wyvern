@@ -19,6 +19,8 @@ namespace Wyvern::FS {
     public:
         explicit SourceFile(const std::string& Path);
 
+        char getChar() const;
+
         std::shared_ptr<std::ifstream> getFile() const;
 
         ~SourceFile();
