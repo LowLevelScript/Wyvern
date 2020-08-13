@@ -4,7 +4,7 @@
 find_package(llvm 10.0.0 REQUIRED)
 
 set(WYVERN_SOURCES
-        Wyvern.cpp
+        Lexer/Lexer.cpp
         )
 
 add_library(Wyvern SHARED ${WYVERN_SOURCES})
@@ -20,6 +20,10 @@ target_include_directories(Wyvern PUBLIC
 add_definitions(${LLVM_DEFINITIONS})
 
 llvm_map_components_to_libnames(llvm_libs support core irreader)
+
+if(MSVC)
+    target_link_libraries(Wyvern PRIVATE "-ignore:4199")
+endif()
 
 target_link_libraries(Wyvern PUBLIC
         simdjson
