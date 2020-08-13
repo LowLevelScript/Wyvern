@@ -13,6 +13,10 @@ namespace Wyvern::Lexer {
         // commands
         tok_function = -2,
         tok_extern = -3,
+
+        // primary
+        tok_identifier = -4,
+        tok_number = -5,
     };
 
 } // namespace Wyvern::Lexer
