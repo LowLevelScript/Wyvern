@@ -15,6 +15,7 @@ namespace Wyvern::Lexer {
 
     public:
         explicit Lexer(const std::string& Path);
+        explicit Lexer(std::shared_ptr<Wyvern::FS::SourceFile> Source);
 
         int getTok();
     };
