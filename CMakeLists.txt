@@ -12,7 +12,6 @@ if(WIN32)
     set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 endif()
 
-
 add_subdirectory(dependencies)
 add_subdirectory(src)
 add_subdirectory(samples)

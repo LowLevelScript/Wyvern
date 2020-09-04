@@ -4,12 +4,15 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <atomic>
+#include <functional>
+#include <memory>
 
 // simdjson
-#include <simdjson.h>
+// #include <simdjson.h>
 
 // llvm
-#include <llvm/ADT/STLExtras.h>
+#include <llvm-7/llvm/ADT/STLExtras.h>
 
 // W: enums
 #include "Wyvern/Lexer/Token.h"

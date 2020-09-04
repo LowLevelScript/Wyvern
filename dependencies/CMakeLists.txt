@@ -12,6 +12,13 @@
 #set(LLVM_BUILD_LLVM_C_DYLIB OFF)
 #add_subdirectory(llvmp/llvm)
 
-set(SIMDJSON_JUST_LIBRARY ON)
-set(SIMDJSON_ENABLE_THREADS ON)
-add_subdirectory(simdjson)
+#get_filename_component(ABSOLUTE_LLVM_DIR
+#        "dependencies/llvmp/llvm/cmake/modules" ABSOLUTE
+#        BASE_DIR "${CMAKE_SOURCE_DIR}"
+#        )
+
+#set(LLVM_DIR "${ABSOLUTE_LLVM_DIR}")
+
+#set(SIMDJSON_JUST_LIBRARY ON)
+#set(SIMDJSON_ENABLE_THREADS ON)
+#add_subdirectory(simdjson)

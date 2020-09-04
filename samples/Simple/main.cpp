@@ -1,18 +1,29 @@
 #include <Wyvern.h>
 
 int main() {
-    Wyvern::FS::SourceFile TestSourceFile = Wyvern::FS::SourceFile("C:\\Users\\Quantumly\\Documents\\Development\\Projects\\LLS\\Wyvern\\samples\\Simple\\Test.lls");
+    std::string Path = "/mnt/c/Users/Quantumly/Documents/Development/Projects/LLS/Wyvern/samples/Simple/Test.lls";
+
+    Wyvern::FS::SourceFile TestSourceFile = Wyvern::FS::SourceFile(Path);
 
     printf("%c", TestSourceFile.getChar());
     printf("%c", TestSourceFile.getChar());
     printf("%c", TestSourceFile.getChar());
     printf("%c", TestSourceFile.getChar());
     printf("%c", TestSourceFile.getChar());
+    printf("%c", TestSourceFile.getChar());
+    printf("%c", TestSourceFile.getChar());
+    printf("%c", TestSourceFile.getChar());
 
-    Wyvern::Lexer::Lexer TestLexer = Wyvern::Lexer::Lexer("C:\\Users\\Quantumly\\Documents\\Development\\Projects\\LLS\\Wyvern\\samples\\Simple\\Test.lls");
+    printf("\n");
 
-    printf("%d", TestLexer.getTok());
-    printf("%d", TestLexer.getTok());
+    Wyvern::Lexer::Lexer TestLexer = Wyvern::Lexer::Lexer(Path);
+
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
 
     return 0;
 }
