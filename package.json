@@ -1,4 +1,10 @@
 {
+  "name": "wyvern",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "sversion": "yarn standard-version"
+  },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
@@ -6,7 +12,8 @@
     "cz-conventional-changelog": "^3.2.0",
     "eclint": "^2.8.1",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11"
+    "lint-staged": "^10.2.11",
+    "standard-version": "^9.0.0"
   },
   "husky": {
     "hooks": {
