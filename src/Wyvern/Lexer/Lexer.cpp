@@ -24,13 +24,13 @@ namespace Wyvern::Lexer {
         }
 
         if (isdigit(LastChar) || LastChar == '.') { // Number: [0-9.]+
-            std::string NumStr;
+            char * NumStr;
             do {
                 NumStr += LastChar;
                 LastChar = Source->getChar();
             } while (isdigit(LastChar) || LastChar == '.');
 
-            NumVal = strtod(NumStr.c_str(), nullptr);
+            NumVal = strtod(NumStr, nullptr);
             return tok_number;
         }
 

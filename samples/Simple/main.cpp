@@ -24,6 +24,12 @@ int main() {
     printf("%d\n", TestLexer.getTok());
     printf("%d\n", TestLexer.getTok());
     printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
+    printf("%d\n", TestLexer.getTok());
 
     return 0;
 }

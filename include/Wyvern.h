@@ -1,6 +1,7 @@
 #ifndef WYVERN_H
 #define WYVERN_H
 
+#include <ctype.h>
 #include <iostream>
 #include <fstream>
 #include <string>
