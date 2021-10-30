@@ -13,7 +13,7 @@
 // #include <simdjson.h>
 
 // llvm
-#include <llvm-7/llvm/ADT/STLExtras.h>
+#include <llvm-12//llvm/ADT/STLExtras.h>
 
 // W: enums
 #include "Wyvern/Lexer/Token.h"

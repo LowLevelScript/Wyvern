@@ -1,7 +1,7 @@
 # Copyright 2020 Matt Jones and Contributors.
 # Recipe based on https://github.com/novelrt/NovelRT
 
-find_package(LLVM "7.0.1" REQUIRED)
+find_package(LLVM "12.0.0" REQUIRED)
 
 set(WYVERN_SOURCES
         FS/SourceFile.cpp
