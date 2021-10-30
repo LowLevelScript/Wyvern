@@ -3,6 +3,8 @@
 namespace Wyvern::Lexer {
     Lexer::Lexer(const std::string &Path) :
         Source(std::make_shared<Wyvern::FS::SourceFile>(Path)) { }
+    Lexer::Lexer(std::shared_ptr<Wyvern::FS::SourceFile> SourceFile) :
+        Source(std::move(SourceFile)) { }
 
     int Lexer::getTok() {
         static int LastChar = ' ';
@@ -24,7 +26,7 @@ namespace Wyvern::Lexer {
         }
 
         if (isdigit(LastChar) || LastChar == '.') { // Number: [0-9.]+
-            char * NumStr;
+            char * NumStr{};
             do {
                 NumStr += LastChar;
                 LastChar = Source->getChar();
